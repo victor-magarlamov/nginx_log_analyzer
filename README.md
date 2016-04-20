@@ -8,11 +8,11 @@ Script **access.sh** analyzes the access log files in the format like:
 
 and return following information for a given day:
 
-* average of requests per second
-* max of requests per second
+* average number of requests per second
+* max number of requests per second
 * top of codes
-* top of requests
-* top of referers
+* top of requests frequency per day
+* top of referers frequency per day
 
 ### Usage 
 
