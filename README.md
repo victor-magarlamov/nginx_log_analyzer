@@ -26,7 +26,7 @@ and we want get statistics for 17 April 2016.
 2. Edit access.sh - set the DAY variable in line 13 to '17/Apr/2016'.
 3. Execute script - bash access.sh
 
-Output:
+### Output
 
     ==================================================
     Req / sec AVG :
