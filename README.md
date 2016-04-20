@@ -1,4 +1,4 @@
-# nginx_log_analyzer
+# Nginx Log Analyzer
 
 ## Analysis of Nginx access logs for a given day
 
