@@ -29,13 +29,13 @@ and we want get statistics for 17 April 2016.
 Output:
 
     ==================================================
-    Average of requests per second :
+    Req / sec AVG :
     14.6588
     ==================================================
-    Max of requests per second :
+    Req / sec peak :
     223
     ==================================================
-    Codes :
+    Total by codes :
     200 1242719
     304 1317
     400 758
