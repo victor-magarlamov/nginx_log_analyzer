@@ -58,5 +58,4 @@ Output:
     9594 "http://www.ok.ru
     3974 "http://ok.ru
     3068 "https://my.mail.ru
-    1598 "http://v3d.popular.ru
     ==================================================
