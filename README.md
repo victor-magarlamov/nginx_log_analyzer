@@ -2,7 +2,7 @@
 
 ## Analysis of Nginx access logs for a given day
 
-Script +access.sh+ analyzes the access log files in the format like:
+Script **access.sh** analyzes the access log files in the format like:
 
     %host - - [%time] \"%request\" %status %bytes \"%{Referer}i\" \"%{User-Agent}i\"
 
