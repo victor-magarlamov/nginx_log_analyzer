@@ -11,8 +11,8 @@ and return following information for a given day:
 * average number of requests per second
 * max number of requests per second
 * top of codes
-* top of requests frequency per day
-* top of referers frequency per day
+* top 5 requests frequency per day
+* top 5 referers frequency per day
 
 ### Usage 
 
