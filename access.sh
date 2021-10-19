@@ -90,7 +90,7 @@ reduce() {
       str='Top of Referers'
       res=$(awk 'FNR <= 10 {print $1, $2}' $REFERER_BY_FREQUENCY)
       ;;
-     'top ip' )
+     'topip' )
       str='Top of Referers'
       res=$(awk 'FNR <= 10 {print $1, $2}' $TOP_IP)
       ;;
@@ -99,4 +99,4 @@ reduce() {
   separator
 }
 
-map && separator && reduce 'average' && reduce 'max' && reduce 'code' && reduce 'request' && reduce 'referer'
+map && separator && reduce 'average' && reduce 'max' && reduce 'code' && reduce 'request' && reduce 'referer' && reduce 'topip'
