@@ -22,6 +22,7 @@ COUNT_PER_SEC='count_per_sec.tmp'
 COUNT_BY_CODE='count_by_code.tmp'
 REQUEST_BY_FREQUENCY='request_by_frequency.tmp'
 REFERER_BY_FREQUENCY='referer_by_frequency.tmp'
+TOP_IP='ip.tmp'
 
 GREEN='\e[32m'
 WHITE='\e[0m'
@@ -47,6 +48,7 @@ map() {
 
   awk '{print $4$5}' total.tmp | sort | uniq -c | sort -rn -o $COUNT_PER_SEC &
   awk '{print $9}' total.tmp | sort | uniq -c | sort -rn -o $COUNT_BY_CODE &
+  awk '{print $1}' total.tmp | sort | uniq -c | sort -rn -o $TOP_IP &
   awk '{ ind = match($6$7, /\?/)
          if (ind > 0)
            print substr($6$7, 0, ind)
@@ -87,6 +89,10 @@ reduce() {
     'referer' )
       str='Top of Referers'
       res=$(awk 'FNR <= 10 {print $1, $2}' $REFERER_BY_FREQUENCY)
+      ;;
+     'top ip' )
+      str='Top of Referers'
+      res=$(awk 'FNR <= 10 {print $1, $2}' $TOP_IP)
       ;;
   esac
   printf "${BOLD}${GREEN}%s :\n${WHITE}${NORMAL}%s" "$str" "$res"
