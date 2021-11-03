@@ -91,7 +91,7 @@ reduce() {
       res=$(awk 'FNR <= 10 {print $1, $2}' $REFERER_BY_FREQUENCY)
       ;;
      'topip' )
-      str='Top of Referers'
+      str='Top of IP'
       res=$(awk 'FNR <= 10 {print $1, $2}' $TOP_IP)
       ;;
   esac
